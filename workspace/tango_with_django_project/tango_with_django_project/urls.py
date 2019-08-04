@@ -18,6 +18,8 @@ from django.urls import path
 from django.urls import include
 from rango import views
 urlpatterns = [ path('', views.index, name='index'),
-                path('rango/', include('rango.urls')),]
+                path('rango/', include('rango.urls')),
+]
+
 
 # The above maps any URLs starting with rango/ to be handled by the rango app. path('admin/', admin.site.urls),
