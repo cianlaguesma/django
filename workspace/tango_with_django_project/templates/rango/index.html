@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
 <html>
 <head> Rango!!</head>
     <body>
@@ -7,6 +10,8 @@
         </div>
     <div>
         <a href = "/rango/about">About</a><br />
+        <img src="{% static 'images/rango.jpg' %}" alt="Picture of Yuna" />
+        <img src="{{ MEDIA_URL}}cat.jpg" />
     </div>
     </body>
 </html>
